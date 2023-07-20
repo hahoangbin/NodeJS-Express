@@ -1,8 +1,16 @@
 <div>
-  <form class="mt-5">
+  <form class="mt-5" method="POST">
     <div class="form-group">
-      <label for="exampleInputEmail1"></label>
       <input type="text" name="q" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+
+    <div class="form-group">
+      <label for="gender-input">Tu khoa</label>
+      <select name="gender" id="dfds" class="form-control">
+        <option value="">--Chon gioi tinh--</option>
+        <option value="male">Nam</option>
+        <option value="female">Nu</option>
+      </select>
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
