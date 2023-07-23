@@ -1,14 +1,14 @@
 class MController {
   // [GET] news
   index(req, res) {
-    res.render("news");
+    res.render('news');
   }
 
   show(req, res) {
-    res.send("Show new path detail");
+    res.send('Show new path detail');
   }
 }
 
 module.exports = new MController();
 
-const newController = require("./MController");
+const newController = require('./MController');
