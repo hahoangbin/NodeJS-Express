@@ -5,6 +5,10 @@ const handlebars = require('express-handlebars');
 const app = express();
 const port = 3000;
 const routes = require('./routers');
+const db = require('./config/db')
+
+// connect to DB
+db.connect()
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
@@ -13,10 +17,6 @@ app.use(
   }),
 );
 app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.render('home');
-});
 
 routes(app);
 
