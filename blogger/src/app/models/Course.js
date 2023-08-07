@@ -4,11 +4,11 @@ const Schema = mongoose.Schema;
 // const ObjectId = Schema.ObjectId;
 
 const Course = new Schema({
-  name: String,
+  name: { type: String, default: ''},
   description: String,
   thumbnail: String,
-  createdAt: Date,
-  updatedAt: Date
+  createdAt: { type: Date, default: Date.now},
+  updatedAt: { type: Date, default: Date.now}
 });
 
 module.exports = mongoose.model('Course', Course)

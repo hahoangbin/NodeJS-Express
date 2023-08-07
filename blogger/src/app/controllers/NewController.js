@@ -11,4 +11,4 @@ class MController {
 
 module.exports = new MController();
 
-const newController = require('./MController');
+const newController = require('./NewController');

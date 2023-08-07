@@ -1,4 +1,4 @@
-const mRouters = require('./Mrouters');
+const mRouters = require('./news');
 const siteRouter = require('./site');
 
 function routes(app) {
